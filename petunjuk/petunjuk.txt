@@ -1,0 +1,41 @@
+﻿LOGIN INFO
+ADMIN
+username : admin
+password: admin
+TEACHER
+=============================
+if create a teacher account to login
+=============================
+username: teacher's email name
+password : teacher ID
+STUDENT
+====================================
+1. if you create a student account via admin
+====================================
+username : NIS Student
+password : Student NIS
+===============================
+*************************************
+===============================
+2. if students create their own accounts
+===============================
+The student's own username and password are known.
+
+
+*All passwords are encrypted using SHA1
+if there is a user who forgets it can be replaced through the database and the type is replaced with SHA1
+=====================================
+if it is hosted and uses https, please copy .htaccess (admin hub) and paste it
+outside the folder.
+And ignore if installed on localhost.
+
+installation instructions on localhost (make sure you have installed xampp with php version 5.6 - 7.3)
+1. create your own elearning folder or foldername in C:/xampp/htdocs
+2. Please copy this elearning file in the folder that has been created
+3. create a database on localhost how to type localhost/phpmyadmin
+5. after passing this stage, now return to the folder that you created earlier in the
+C:/xampp/htdocs/yourfoldername then find the config folder and edit db.php and connect.php find the text
+$db = "fill in your database name here" and adjust it to the database name you created earlier.
+6. After setting the 2 files above, now go to the browser and type in localhost/folder_elearning name earlier
+that you make.
+After that stage, The Learning Kernel should be running
